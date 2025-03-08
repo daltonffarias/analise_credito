@@ -1,0 +1,21 @@
+banco_ficticio/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── validated/
+│
+├── models/
+│   ├── credit_risk.py
+│   ├── income_prediction.py
+│   └── payment_capacity.py
+│
+├── reports/
+│   ├── performance_monitoring.py
+│   └── risk_metrics.py
+│
+├── utils/
+│   ├── data_processing.py
+│   └── data_validation.py
+│
+└── main.py
