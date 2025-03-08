@@ -1,4 +1,3 @@
-# analise_credito
 A análise de crédito é uma das aplicações mais importantes no setor financeiro, pois permite avaliar a capacidade de um cliente de pagar suas dívidas e o risco associado à concessão de crédito. Com o avanço das técnicas de machine learning, é possível automatizar e aprimorar essa análise, utilizando dados históricos e características dos clientes para prever comportamentos futuros.
 
 Neste projeto, desenvolvemos uma aplicação interativa utilizando a biblioteca Streamlit para realizar uma análise de crédito fictícia. O código carrega um conjunto de dados contendo informações sobre clientes, como idade, renda, dívida, histórico de crédito e outros atributos relevantes. A partir desses dados, são aplicados três modelos analíticos:
