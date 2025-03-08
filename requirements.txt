@@ -1,0 +1,13 @@
+streamlit
+pandas
+matplotlib
+LinearRegression
+RandomForestClassifier
+GradientBoostingClassifier
+train_test_split
+mean_squared_error
+accuracy_score
+roc_auc_score
+confusion_matrix
+roc_curve
+seaborn
