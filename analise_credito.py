@@ -146,10 +146,6 @@ elif uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.session_state['df'] = df  # Armazena o DataFrame na sessão
 
-    # Exibir dados brutos
-    st.subheader("Dados Brutos")
-    st.write(df)
-
     # Processamento de dados
     st.subheader("Processamento de Dados")
     df['idade'] = 2023 - df['ano_nascimento']
@@ -234,19 +230,6 @@ elif uploaded_file is not None:
 
     # Relatórios e Visualizações
     st.subheader("Relatórios e Visualizações")
-
-    # Gráfico de Desempenho dos Modelos
-    st.markdown("### Desempenho dos Modelos")
-    performance_metrics = {
-        'Renda Presumida': mse_income,
-        'Capacidade de Pagamento': accuracy_payment,
-        'Risco de Inadimplência': roc_auc_risk
-    }
-    fig, ax = plt.subplots()
-    ax.bar(performance_metrics.keys(), performance_metrics.values())
-    ax.set_ylabel("Desempenho")
-    ax.set_title("Desempenho dos Modelos")
-    st.pyplot(fig)
 
     # Relatório de Métricas de Risco
     st.markdown("### Relatório de Métricas de Risco")
