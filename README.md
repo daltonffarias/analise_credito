@@ -21,3 +21,5 @@ Um modelo de Gradient Boosting Classifier é utilizado para prever o risco de in
 O desempenho do modelo é avaliado por meio da AUC-ROC (Área Sob a Curva ROC), que mede a capacidade do modelo de distinguir entre clientes inadimplentes e não inadimplentes.
 
 Além dos modelos, o código inclui visualizações interativas, como gráficos de dispersão, matrizes de confusão e curvas ROC, que ajudam a interpretar os resultados e a entender o desempenho de cada modelo. Essas visualizações são fundamentais para uma análise completa e didática, permitindo que usuários sem conhecimento técnico aprofundado possam compreender as previsões e métricas.
+
+O estudo está neste link https://epbar5ebkntucapp8icbkb4.streamlit.app/
