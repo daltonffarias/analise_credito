@@ -1,4 +1,4 @@
-banco_ficticio/
+analise_credito/
 │
 ├── data/
 │   ├── raw/
