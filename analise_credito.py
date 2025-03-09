@@ -19,14 +19,17 @@ uploaded_file = st.sidebar.file_uploader("Carregue o arquivo CSV com os dados do
 
 # Botão para carregar dados do GitHub
 if st.sidebar.button("Carregar dados do GitHub"):
-    url = "https://github.com/daltonffarias/analise_credito/blob/main/dados_credito.csv"
+    url = "https://raw.githubusercontent.com/daltonffarias/analise_credito/main/dados_credito.csv"  # URL raw do GitHub
     response = requests.get(url)
     if response.status_code == 200:
-        df = pd.read_csv(StringIO(response.text))
-        st.session_state['df'] = df
-        st.sidebar.success("Dados carregados com sucesso do GitHub!")
+        try:
+            df = pd.read_csv(StringIO(response.text))
+            st.session_state['df'] = df
+            st.sidebar.success("Dados carregados com sucesso do GitHub!")
+        except Exception as e:
+            st.sidebar.error(f"Erro ao ler o CSV: {e}")
     else:
-        st.sidebar.error("Erro ao carregar dados do GitHub.")
+        st.sidebar.error(f"Erro ao carregar dados do GitHub. Código de status: {response.status_code}")
 
 # Verifica se o DataFrame está na sessão
 if 'df' in st.session_state:
